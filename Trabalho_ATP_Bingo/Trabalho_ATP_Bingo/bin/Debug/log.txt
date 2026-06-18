@@ -1,0 +1,138 @@
+=== LOG DA PARTIDA - 17/06/2026 20:39:51 ===
+[20:39:51] Quantidade de jogadores: 3
+[20:39:51] Jogador cadastrado: Ana, 20 anos, sexo Feminino, 1 cartela(s).
+[20:39:51] Jogador cadastrado: Beto, 21 anos, sexo Masculino, 1 cartela(s).
+[20:39:51] Jogador cadastrado: Caio, 22 anos, sexo Masculino, 1 cartela(s).
+[20:39:51] Iniciando distribuicao de cartelas.
+[20:39:51] Cartela 1 distribuida para Ana.
+[20:39:51] Cartela 1 distribuida para Beto.
+[20:39:51] Cartela 1 distribuida para Caio.
+[20:39:51] Distribuicao concluida. Unicidade validada.
+[20:39:51] === INICIO DA PARTIDA ===
+[20:39:51] Numero sorteado: 53
+[20:39:51] Ana: numero 53 marcado na cartela 1.
+[20:39:51] Ana cantou BINGO.
+[20:39:51] BINGO INVALIDO: Ana cantou errado com 1 cartela. ELIMINADO na posicao 3.
+[20:39:51] Numero sorteado: 43
+[20:39:51] Beto: numero 43 marcado na cartela 1.
+[20:39:51] Numero sorteado: 9
+[20:39:51] Numero sorteado: 40
+[20:39:51] Caio: numero 40 marcado na cartela 1.
+[20:39:51] Numero sorteado: 15
+[20:39:51] Numero sorteado: 12
+[20:39:51] Beto: numero 12 marcado na cartela 1.
+[20:39:51] Numero sorteado: 10
+[20:39:51] Beto: numero 10 marcado na cartela 1.
+[20:39:51] Numero sorteado: 42
+[20:39:51] Numero sorteado: 45
+[20:39:51] Beto: numero 45 marcado na cartela 1.
+[20:39:51] Numero sorteado: 68
+[20:39:51] Numero sorteado: 25
+[20:39:51] Numero sorteado: 51
+[20:39:51] Beto: numero 51 marcado na cartela 1.
+[20:39:51] Numero sorteado: 50
+[20:39:51] Numero sorteado: 71
+[20:39:51] Numero sorteado: 31
+[20:39:51] Caio: numero 31 marcado na cartela 1.
+[20:39:51] Numero sorteado: 2
+[20:39:51] Numero sorteado: 18
+[20:39:51] Beto: numero 18 marcado na cartela 1.
+[20:39:51] Numero sorteado: 65
+[20:39:51] Beto: numero 65 marcado na cartela 1.
+[20:39:51] Numero sorteado: 63
+[20:39:51] Numero sorteado: 33
+[20:39:51] Caio: numero 33 marcado na cartela 1.
+[20:39:51] Numero sorteado: 17
+[20:39:51] Caio: numero 17 marcado na cartela 1.
+[20:39:51] Numero sorteado: 7
+[20:39:51] Beto: numero 7 marcado na cartela 1.
+[20:39:51] Caio: numero 7 marcado na cartela 1.
+[20:39:51] Numero sorteado: 28
+[20:39:51] Beto: numero 28 marcado na cartela 1.
+[20:39:51] Numero sorteado: 58
+[20:39:51] Caio: numero 58 marcado na cartela 1.
+[20:39:51] Numero sorteado: 26
+[20:39:51] Numero sorteado: 74
+[20:39:51] Caio: numero 74 marcado na cartela 1.
+[20:39:51] Numero sorteado: 59
+[20:39:51] Caio: numero 59 marcado na cartela 1.
+[20:39:51] Numero sorteado: 55
+[20:39:51] Beto: numero 55 marcado na cartela 1.
+[20:39:51] Numero sorteado: 61
+[20:39:51] Beto: numero 61 marcado na cartela 1.
+[20:39:51] Caio: numero 61 marcado na cartela 1.
+[20:39:51] Numero sorteado: 52
+[20:39:51] Caio: numero 52 marcado na cartela 1.
+[20:39:51] Numero sorteado: 38
+[20:39:51] Numero sorteado: 11
+[20:39:51] Numero sorteado: 19
+[20:39:51] Beto: numero 19 marcado na cartela 1.
+[20:39:51] Caio: numero 19 marcado na cartela 1.
+[20:39:51] Numero sorteado: 48
+[20:39:51] Numero sorteado: 69
+[20:39:51] Numero sorteado: 46
+[20:39:51] Numero sorteado: 44
+[20:39:51] Numero sorteado: 35
+[20:39:51] Numero sorteado: 4
+[20:39:51] Numero sorteado: 16
+[20:39:51] Numero sorteado: 21
+[20:39:51] Numero sorteado: 3
+[20:39:51] Numero sorteado: 57
+[20:39:51] Numero sorteado: 20
+[20:39:51] Caio: numero 20 marcado na cartela 1.
+[20:39:51] Numero sorteado: 62
+[20:39:51] Beto: numero 62 marcado na cartela 1.
+[20:39:51] Caio: numero 62 marcado na cartela 1.
+[20:39:51] Numero sorteado: 34
+[20:39:51] Caio: numero 34 marcado na cartela 1.
+[20:39:51] Numero sorteado: 13
+[20:39:51] Beto: numero 13 marcado na cartela 1.
+[20:39:51] Caio: numero 13 marcado na cartela 1.
+[20:39:51] Numero sorteado: 66
+[20:39:51] Beto: numero 66 marcado na cartela 1.
+[20:39:51] Numero sorteado: 64
+[20:39:51] Numero sorteado: 75
+[20:39:51] Numero sorteado: 27
+[20:39:51] Caio: numero 27 marcado na cartela 1.
+[20:39:51] Numero sorteado: 60
+[20:39:51] Numero sorteado: 39
+[20:39:51] Beto: numero 39 marcado na cartela 1.
+[20:39:51] Numero sorteado: 36
+[20:39:51] Numero sorteado: 29
+[20:39:51] Beto: numero 29 marcado na cartela 1.
+[20:39:51] Numero sorteado: 37
+[20:39:51] Numero sorteado: 49
+[20:39:51] Beto: numero 49 marcado na cartela 1.
+[20:39:51] Caio: numero 49 marcado na cartela 1.
+[20:39:51] Numero sorteado: 47
+[20:39:51] Numero sorteado: 32
+[20:39:51] Numero sorteado: 23
+[20:39:51] Beto: numero 23 marcado na cartela 1.
+[20:39:51] Numero sorteado: 1
+[20:39:51] Beto: numero 1 marcado na cartela 1.
+[20:39:51] Caio: numero 1 marcado na cartela 1.
+[20:39:51] Numero sorteado: 14
+[20:39:51] Numero sorteado: 67
+[20:39:51] Numero sorteado: 22
+[20:39:51] Numero sorteado: 6
+[20:39:51] Caio: numero 6 marcado na cartela 1.
+[20:39:51] Numero sorteado: 8
+[20:39:51] Caio: numero 8 marcado na cartela 1.
+[20:39:51] Numero sorteado: 73
+[20:39:51] Caio: numero 73 marcado na cartela 1.
+[20:39:51] Numero sorteado: 56
+[20:39:51] Beto: numero 56 marcado na cartela 1.
+[20:39:51] Caio: numero 56 marcado na cartela 1.
+[20:39:51] Numero sorteado: 5
+[20:39:51] Numero sorteado: 54
+[20:39:51] Beto: numero 54 marcado na cartela 1.
+[20:39:51] Numero sorteado: 30
+[20:39:51] Caio: numero 30 marcado na cartela 1.
+[20:39:51] Beto cantou BINGO.
+[20:39:51] BINGO VALIDO: Beto encerrou na posicao 1.
+[20:39:51] Caio classificado na posicao 2 (ultimo jogador na disputa).
+[20:39:51] === FIM DA PARTIDA ===
+[20:39:51] === RANKING FINAL ===
+[20:39:51] 1o lugar - Beto, 21 anos, sexo Masculino
+[20:39:51] 2o lugar - Caio, 22 anos, sexo Masculino
+[20:39:51] 3o lugar - Ana, 20 anos, sexo Feminino
