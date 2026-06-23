@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
 
 namespace Trabalho_ATP_Bingo
@@ -28,7 +27,6 @@ namespace Trabalho_ATP_Bingo
             random = new Random();
             caminhoLog = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log.txt");
 
-            // Inicia (limpa) o arquivo de log a cada nova partida.
             try
             {
                 File.WriteAllText(caminhoLog, "=== LOG DA PARTIDA - " + DateTime.Now + " ===" + Environment.NewLine);
@@ -38,10 +36,6 @@ namespace Trabalho_ATP_Bingo
                 Console.WriteLine("Erro ao iniciar o log: " + ex.Message);
             }
         }
-
-        // ---------------------------------------------------------------
-        // CADASTRO
-        // ---------------------------------------------------------------
 
         public void CadastrarJogadores()
         {
@@ -67,47 +61,28 @@ namespace Trabalho_ATP_Bingo
             }
         }
 
-        // ---------------------------------------------------------------
-        // DISTRIBUICAO DE CARTELAS (com validacao de unicidade)
-        // ---------------------------------------------------------------
-
         public void DistribuirCartelas()
         {
             Console.WriteLine();
             Console.WriteLine("=== DISTRIBUINDO CARTELAS ===");
             SalvarLog("Iniciando distribuicao de cartelas.");
 
-            List<Cartela> todasCartelas = new List<Cartela>();
-
             for (int i = 0; i < quantidadeJogadores; i++)
             {
                 int qtd = cartelasDesejadas[i];
-
-                // Contorno do bug do construtor de Jogador: o array de cartelas
-                // nasce com tamanho 0, entao redimensionamos pela propriedade publica
-                // antes de adicionar (o contador interno continua em 0).
                 jogadores[i].Cartelas = new Cartela[qtd];
 
                 for (int c = 0; c < qtd; c++)
                 {
                     Cartela cartela;
                     int tentativas = 0;
-
-                    // Gera a cartela e regenera se ela for identica a alguma ja distribuida.
                     do
                     {
                         cartela = new Cartela();
                         cartela.GerarNumero(random);
                         tentativas++;
-                    } while (EhIdentica(cartela, todasCartelas) && tentativas < 100);
+                    } while (JaExisteCartelaIgual(cartela) && tentativas < 100);
 
-                    if (EhIdentica(cartela, todasCartelas))
-                    {
-                        SalvarLog("AVISO: nao foi possivel garantir cartela unica para " +
-                                  jogadores[i].Nome + " apos " + tentativas + " tentativas.");
-                    }
-
-                    todasCartelas.Add(cartela);
                     jogadores[i].AdicionarCartela(cartela);
                     SalvarLog("Cartela " + (c + 1) + " distribuida para " + jogadores[i].Nome + ".");
                 }
@@ -117,18 +92,23 @@ namespace Trabalho_ATP_Bingo
             SalvarLog("Distribuicao concluida. Unicidade validada.");
         }
 
-        private bool EhIdentica(Cartela nova, List<Cartela> existentes)
+        private bool JaExisteCartelaIgual(Cartela nova)
         {
-            foreach (Cartela c in existentes)
+            for (int i = 0; i < quantidadeJogadores; i++)
             {
-                if (MesmosNumeros(nova, c)) return true;
+                for (int c = 0; c < jogadores[i].QuantCartelas; c++)
+                {
+                    if (jogadores[i].Cartelas[c] != null && MesmosNumeros(nova, jogadores[i].Cartelas[c]))
+                    {
+                        return true;
+                    }
+                }
             }
             return false;
         }
 
         private bool MesmosNumeros(Cartela a, Cartela b)
         {
-            // Duas cartelas sao identicas se contem exatamente o mesmo conjunto de numeros.
             for (int n = 1; n <= 75; n++)
             {
                 if (a.VerificarMatriz(n) != b.VerificarMatriz(n)) return false;
@@ -151,10 +131,6 @@ namespace Trabalho_ATP_Bingo
                 }
             }
         }
-
-        // ---------------------------------------------------------------
-        // PARTIDA
-        // ---------------------------------------------------------------
 
         public void IniciarPartida()
         {
@@ -277,9 +253,6 @@ namespace Trabalho_ATP_Bingo
                 Console.WriteLine("BINGO de " + j.Nome + " VALIDADO! Posicao no ranking: " + j.PosicaoRanking + ".");
                 SalvarLog("BINGO VALIDO: " + j.Nome + " encerrou na posicao " + j.PosicaoRanking + ".");
 
-                // Regra do penultimo: a partida so termina por bingo VALIDO.
-                // Quando este bingo deixa apenas 1 (ou nenhum) jogador na disputa,
-                // a partida se encerra.
                 if (ContarAtivos() <= 1)
                 {
                     partidaEncerrada = true;
@@ -287,7 +260,6 @@ namespace Trabalho_ATP_Bingo
                 return;
             }
 
-            // Canto invalido: a regra depende de quantas cartelas validas o jogador ainda tem.
             int validas = ContarCartelasValidas(j);
             if (validas > 1)
             {
@@ -330,10 +302,6 @@ namespace Trabalho_ATP_Bingo
 
         public bool VerificarFimDeJogo()
         {
-            // A partida termina quando o penultimo jogador faz bingo VALIDO
-            // (partidaEncerrada), quando ninguem mais esta na disputa, ou quando
-            // os 75 numeros se esgotam. Uma eliminacao por canto errado, sozinha,
-            // NAO encerra a partida: o jogador restante segue ate vencer ou esgotar.
             return partidaEncerrada || quantidadeSorteados >= 75 || ContarAtivos() == 0;
         }
 
@@ -349,10 +317,6 @@ namespace Trabalho_ATP_Bingo
 
         private void ClassificarAtivosRestantes()
         {
-            // Caso normal (regra do penultimo): sobra 1 ativo, que recebe a posicao
-            // restante. Caso de borda (75 numeros esgotados sem bingo): pode haver
-            // varios ativos; como o espec nao define desempate, eles sao classificados
-            // do topo para baixo na ordem de cadastro.
             bool porEsgotamento = quantidadeSorteados >= 75 && ContarAtivos() > 1;
             for (int i = 0; i < quantidadeJogadores; i++)
             {
@@ -369,10 +333,6 @@ namespace Trabalho_ATP_Bingo
                 }
             }
         }
-
-        // ---------------------------------------------------------------
-        // RANKING E LOG
-        // ---------------------------------------------------------------
 
         public void ExibirRanking()
         {
@@ -423,10 +383,6 @@ namespace Trabalho_ATP_Bingo
             }
         }
 
-        // ---------------------------------------------------------------
-        // AUXILIARES DE ENTRADA E EXIBICAO
-        // ---------------------------------------------------------------
-
         private void ExibirJogadoresAtivos()
         {
             for (int i = 0; i < quantidadeJogadores; i++)
@@ -449,28 +405,12 @@ namespace Trabalho_ATP_Bingo
             return texto;
         }
 
-        // Le uma linha tratando o fim da entrada (EOF). Sem isso, Console.ReadLine()
-        // retorna null repetidamente em um stream encerrado e os lacos de leitura
-        // entrariam em loop infinito.
-        private string LerLinha()
-        {
-            string linha = Console.ReadLine();
-            if (linha == null)
-            {
-                Console.WriteLine("Entrada encerrada inesperadamente. Finalizando o programa.");
-                SalvarLog("Entrada encerrada (EOF). Programa finalizado.");
-                Environment.Exit(0);
-            }
-            return linha;
-        }
-
         private int LerInteiro(int min, int max)
         {
             int valor;
             while (true)
             {
-                string entrada = LerLinha();
-                if (int.TryParse(entrada, out valor) && valor >= min && valor <= max)
+                if (int.TryParse(Console.ReadLine(), out valor) && valor >= min && valor <= max)
                 {
                     return valor;
                 }
@@ -490,7 +430,7 @@ namespace Trabalho_ATP_Bingo
             do
             {
                 Console.Write(mensagem);
-                texto = LerLinha();
+                texto = Console.ReadLine();
             } while (string.IsNullOrWhiteSpace(texto));
             return texto;
         }
@@ -500,7 +440,7 @@ namespace Trabalho_ATP_Bingo
             while (true)
             {
                 Console.Write("Sexo (M/F/Outro): ");
-                string entrada = LerLinha();
+                string entrada = Console.ReadLine();
                 if (!string.IsNullOrWhiteSpace(entrada))
                 {
                     string s = entrada.Trim().ToUpper();

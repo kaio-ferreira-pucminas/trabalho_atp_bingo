@@ -2,7 +2,7 @@ using System;
 
 namespace Trabalho_ATP_Bingo
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -22,10 +22,7 @@ namespace Trabalho_ATP_Bingo
 
             Console.WriteLine();
             Console.WriteLine("Fim do jogo. Pressione qualquer tecla para sair...");
-            if (!Console.IsInputRedirected)
-            {
-                Console.ReadKey();
-            }
+            Console.ReadKey();
         }
     }
 }
