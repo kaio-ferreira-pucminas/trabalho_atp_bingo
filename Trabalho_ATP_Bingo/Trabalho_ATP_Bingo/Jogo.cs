@@ -25,7 +25,7 @@ namespace Trabalho_ATP_Bingo
             posicaoAtualRanking = 1;
             partidaEncerrada = false;
             random = new Random();
-            caminhoLog = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log.txt");
+            caminhoLog = @"D:\Meus Projetos - Trabalhos Faculdades\trabalho_atp_bingo\Trabalho_ATP_Bingo\Trabalho_ATP_Bingo\log.txt";
 
             try
             {
