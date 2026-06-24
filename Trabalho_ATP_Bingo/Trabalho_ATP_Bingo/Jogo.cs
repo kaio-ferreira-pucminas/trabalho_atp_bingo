@@ -199,14 +199,15 @@ namespace Trabalho_ATP_Bingo
             for (int i = 0; i < quantidadeJogadores; i++)
             {
                 Jogador j = jogadores[i];
-                if (!j.EstaAtivo) continue;
-
-                for (int c = 0; c < j.QuantCartelas; c++)
+                if (j.EstaAtivo)
                 {
-                    Cartela cartela = j.Cartelas[c];
-                    if (cartela != null && cartela.Marcar(n))
+                    for (int c = 0; c < j.QuantCartelas; c++)
                     {
-                        SalvarLog(j.Nome + ": numero " + n + " marcado na cartela " + (c + 1) + ".");
+                        Cartela cartela = j.Cartelas[c];
+                        if (cartela != null && cartela.Marcar(n))
+                        {
+                            SalvarLog(j.Nome + ": numero " + n + " marcado na cartela " + (c + 1) + ".");
+                        }
                     }
                 }
             }
@@ -228,13 +229,14 @@ namespace Trabalho_ATP_Bingo
                 if (!j.EstaAtivo)
                 {
                     Console.WriteLine(j.Nome + " nao esta mais na disputa.");
-                    continue;
                 }
+                else
+                {
+                    SalvarLog(j.Nome + " cantou BINGO.");
+                    VerificarBingoCantado(j);
 
-                SalvarLog(j.Nome + " cantou BINGO.");
-                VerificarBingoCantado(j);
-
-                if (VerificarFimDeJogo()) break;
+                    if (VerificarFimDeJogo()) break;
+                }
             }
         }
 
