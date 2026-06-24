@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Meus Projetos - Trabalhos Faculdades\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\",
+  "WorkspaceRootPath": "C:\\Users\\Marcia\\source\\repos\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{32EF2C3E-38BD-47F4-930F-B13F6C6D4858}|Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo.csproj|d:\\meus projetos - trabalhos faculdades\\trabalho_atp_bingo\\trabalho_atp_bingo\\trabalho_atp_bingo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32EF2C3E-38BD-47F4-930F-B13F6C6D4858}|Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo.csproj|solutionrelative:trabalho_atp_bingo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32EF2C3E-38BD-47F4-930F-B13F6C6D4858}|Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo.csproj|d:\\meus projetos - trabalhos faculdades\\trabalho_atp_bingo\\trabalho_atp_bingo\\trabalho_atp_bingo\\jogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32EF2C3E-38BD-47F4-930F-B13F6C6D4858}|Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo.csproj|solutionrelative:trabalho_atp_bingo\\jogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32EF2C3E-38BD-47F4-930F-B13F6C6D4858}|Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo.csproj|d:\\meus projetos - trabalhos faculdades\\trabalho_atp_bingo\\trabalho_atp_bingo\\trabalho_atp_bingo\\cartela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32EF2C3E-38BD-47F4-930F-B13F6C6D4858}|Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo.csproj|c:\\users\\marcia\\source\\repos\\trabalho_atp_bingo\\trabalho_atp_bingo\\trabalho_atp_bingo\\cartela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32EF2C3E-38BD-47F4-930F-B13F6C6D4858}|Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo.csproj|solutionrelative:trabalho_atp_bingo\\cartela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32EF2C3E-38BD-47F4-930F-B13F6C6D4858}|Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo.csproj|d:\\meus projetos - trabalhos faculdades\\trabalho_atp_bingo\\trabalho_atp_bingo\\trabalho_atp_bingo\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32EF2C3E-38BD-47F4-930F-B13F6C6D4858}|Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo.csproj|C:\\Users\\Marcia\\source\\repos\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\trabalho_atp_bingo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32EF2C3E-38BD-47F4-930F-B13F6C6D4858}|Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo.csproj|solutionrelative:trabalho_atp_bingo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32EF2C3E-38BD-47F4-930F-B13F6C6D4858}|Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo.csproj|C:\\Users\\Marcia\\source\\repos\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\trabalho_atp_bingo\\jogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32EF2C3E-38BD-47F4-930F-B13F6C6D4858}|Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo.csproj|solutionrelative:trabalho_atp_bingo\\jogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32EF2C3E-38BD-47F4-930F-B13F6C6D4858}|Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo.csproj|C:\\Users\\Marcia\\source\\repos\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\trabalho_atp_bingo\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32EF2C3E-38BD-47F4-930F-B13F6C6D4858}|Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo.csproj|solutionrelative:trabalho_atp_bingo\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,59 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Meus Projetos - Trabalhos Faculdades\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Marcia\\source\\repos\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Program.cs",
               "RelativeDocumentMoniker": "Trabalho_ATP_Bingo\\Program.cs",
-              "ToolTip": "D:\\Meus Projetos - Trabalhos Faculdades\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Program.cs",
+              "ToolTip": "C:\\Users\\Marcia\\source\\repos\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Program.cs",
               "RelativeToolTip": "Trabalho_ATP_Bingo\\Program.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwBIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T22:37:43.772Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-17T22:37:43.772Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Cartela.cs",
-              "DocumentMoniker": "D:\\Meus Projetos - Trabalhos Faculdades\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Cartela.cs",
+              "DocumentMoniker": "C:\\Users\\Marcia\\source\\repos\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Cartela.cs",
               "RelativeDocumentMoniker": "Trabalho_ATP_Bingo\\Cartela.cs",
-              "ToolTip": "D:\\Meus Projetos - Trabalhos Faculdades\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Cartela.cs",
+              "ToolTip": "C:\\Users\\Marcia\\source\\repos\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Cartela.cs",
               "RelativeToolTip": "Trabalho_ATP_Bingo\\Cartela.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwBIAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAYwBIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-17T22:44:49.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Jogo.cs",
-              "DocumentMoniker": "D:\\Meus Projetos - Trabalhos Faculdades\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Jogo.cs",
+              "DocumentMoniker": "C:\\Users\\Marcia\\source\\repos\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Jogo.cs",
               "RelativeDocumentMoniker": "Trabalho_ATP_Bingo\\Jogo.cs",
-              "ToolTip": "D:\\Meus Projetos - Trabalhos Faculdades\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Jogo.cs",
+              "ToolTip": "C:\\Users\\Marcia\\source\\repos\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Jogo.cs",
               "RelativeToolTip": "Trabalho_ATP_Bingo\\Jogo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T22:44:42.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-17T22:44:42.997Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Jogador.cs",
-              "DocumentMoniker": "D:\\Meus Projetos - Trabalhos Faculdades\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Jogador.cs",
+              "DocumentMoniker": "C:\\Users\\Marcia\\source\\repos\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Jogador.cs",
               "RelativeDocumentMoniker": "Trabalho_ATP_Bingo\\Jogador.cs",
-              "ToolTip": "D:\\Meus Projetos - Trabalhos Faculdades\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Jogador.cs",
+              "ToolTip": "C:\\Users\\Marcia\\source\\repos\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\Jogador.cs",
               "RelativeToolTip": "Trabalho_ATP_Bingo\\Jogador.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T22:44:33.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-17T22:44:33.115Z"
             }
           ]
         }

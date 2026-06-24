@@ -5,3 +5,10 @@ D:\Meus Projetos - Trabalhos Faculdades\trabalho_atp_bingo\Trabalho_ATP_Bingo\Tr
 D:\Meus Projetos - Trabalhos Faculdades\trabalho_atp_bingo\Trabalho_ATP_Bingo\Trabalho_ATP_Bingo\bin\Debug\Trabalho_ATP_Bingo.pdb
 D:\Meus Projetos - Trabalhos Faculdades\trabalho_atp_bingo\Trabalho_ATP_Bingo\Trabalho_ATP_Bingo\obj\Debug\Trabalho_ATP_Bingo.exe
 D:\Meus Projetos - Trabalhos Faculdades\trabalho_atp_bingo\Trabalho_ATP_Bingo\Trabalho_ATP_Bingo\obj\Debug\Trabalho_ATP_Bingo.pdb
+C:\Users\Marcia\source\repos\trabalho_atp_bingo\Trabalho_ATP_Bingo\Trabalho_ATP_Bingo\bin\Debug\Trabalho_ATP_Bingo.exe.config
+C:\Users\Marcia\source\repos\trabalho_atp_bingo\Trabalho_ATP_Bingo\Trabalho_ATP_Bingo\bin\Debug\Trabalho_ATP_Bingo.exe
+C:\Users\Marcia\source\repos\trabalho_atp_bingo\Trabalho_ATP_Bingo\Trabalho_ATP_Bingo\bin\Debug\Trabalho_ATP_Bingo.pdb
+C:\Users\Marcia\source\repos\trabalho_atp_bingo\Trabalho_ATP_Bingo\Trabalho_ATP_Bingo\obj\Debug\Trabalho_ATP_Bingo.csproj.AssemblyReference.cache
+C:\Users\Marcia\source\repos\trabalho_atp_bingo\Trabalho_ATP_Bingo\Trabalho_ATP_Bingo\obj\Debug\Trabalho_ATP_Bingo.csproj.CoreCompileInputs.cache
+C:\Users\Marcia\source\repos\trabalho_atp_bingo\Trabalho_ATP_Bingo\Trabalho_ATP_Bingo\obj\Debug\Trabalho_ATP_Bingo.exe
+C:\Users\Marcia\source\repos\trabalho_atp_bingo\Trabalho_ATP_Bingo\Trabalho_ATP_Bingo\obj\Debug\Trabalho_ATP_Bingo.pdb
