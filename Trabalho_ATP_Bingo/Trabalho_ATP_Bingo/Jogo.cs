@@ -25,11 +25,13 @@ namespace Trabalho_ATP_Bingo
             posicaoAtualRanking = 1;
             partidaEncerrada = false;
             random = new Random();
-            caminhoLog = @"D:\Meus Projetos - Trabalhos Faculdades\trabalho_atp_bingo\Trabalho_ATP_Bingo\Trabalho_ATP_Bingo\log.txt";
+            caminhoLog = "D:\\Meus Projetos - Trabalhos Faculdades\\trabalho_atp_bingo\\Trabalho_ATP_Bingo\\Trabalho_ATP_Bingo\\log.txt";
 
             try
             {
-                File.WriteAllText(caminhoLog, "=== LOG DA PARTIDA - " + DateTime.Now + " ===" + Environment.NewLine);
+                StreamWriter sw = new StreamWriter(caminhoLog, false);
+                sw.WriteLine("=== LOG DA PARTIDA ===");
+                sw.Close();
             }
             catch (Exception ex)
             {
@@ -116,7 +118,7 @@ namespace Trabalho_ATP_Bingo
             return true;
         }
 
-        public void ExibirCartelasIniciais()
+        public void ExibirCartelas()
         {
             Console.WriteLine();
             Console.WriteLine("=== CARTELAS DOS JOGADORES ===");
@@ -126,8 +128,11 @@ namespace Trabalho_ATP_Bingo
                 Console.WriteLine("Jogador " + (i + 1) + " - " + jogadores[i].Nome + ":");
                 for (int c = 0; c < jogadores[i].QuantCartelas; c++)
                 {
-                    Console.WriteLine("Cartela " + (c + 1) + ":");
-                    jogadores[i].Cartelas[c].Exibir();
+                    if (jogadores[i].Cartelas[c] != null)
+                    {
+                        Console.WriteLine("Cartela " + (c + 1) + ":");
+                        jogadores[i].Cartelas[c].Exibir();
+                    }
                 }
             }
         }
@@ -154,6 +159,7 @@ namespace Trabalho_ATP_Bingo
                 SalvarLog("Numero sorteado: " + numero);
 
                 MarcarCartelas(numero);
+                ExibirCartelas();
                 ProcessarCantos();
 
                 if (VerificarFimDeJogo()) break;
@@ -325,9 +331,15 @@ namespace Trabalho_ATP_Bingo
                     jogadores[i].EstaAtivo = false;
                     jogadores[i].PosicaoRanking = posicaoAtualRanking;
                     posicaoAtualRanking++;
-                    string motivo = porEsgotamento
-                        ? " (numeros esgotados; desempate pela ordem de cadastro)"
-                        : " (ultimo jogador na disputa)";
+                    string motivo;
+                    if (porEsgotamento)
+                    {
+                        motivo = " (numeros esgotados; desempate pela ordem de cadastro)";
+                    }
+                    else
+                    {
+                        motivo = " (ultimo jogador na disputa)";
+                    }
                     SalvarLog(jogadores[i].Nome + " classificado na posicao " +
                               jogadores[i].PosicaoRanking + motivo + ".");
                 }
@@ -359,8 +371,9 @@ namespace Trabalho_ATP_Bingo
         {
             try
             {
-                string linha = "[" + DateTime.Now.ToString("HH:mm:ss") + "] " + msg + Environment.NewLine;
-                File.AppendAllText(caminhoLog, linha);
+                StreamWriter sw = new StreamWriter(caminhoLog, true);
+                sw.WriteLine(msg);
+                sw.Close();
             }
             catch (Exception ex)
             {
@@ -374,8 +387,14 @@ namespace Trabalho_ATP_Bingo
             Console.WriteLine("=== LOG DA PARTIDA (log.txt) ===");
             try
             {
-                string conteudo = File.ReadAllText(caminhoLog);
-                Console.WriteLine(conteudo);
+                StreamReader sr = new StreamReader(caminhoLog);
+                string linha = sr.ReadLine();
+                while (linha != null)
+                {
+                    Console.WriteLine(linha);
+                    linha = sr.ReadLine();
+                }
+                sr.Close();
             }
             catch (Exception ex)
             {
@@ -407,15 +426,13 @@ namespace Trabalho_ATP_Bingo
 
         private int LerInteiro(int min, int max)
         {
-            int valor;
-            while (true)
+            int valor = int.Parse(Console.ReadLine());
+            while (valor < min || valor > max)
             {
-                if (int.TryParse(Console.ReadLine(), out valor) && valor >= min && valor <= max)
-                {
-                    return valor;
-                }
                 Console.WriteLine("Valor invalido. Digite um numero entre " + min + " e " + max + ":");
+                valor = int.Parse(Console.ReadLine());
             }
+            return valor;
         }
 
         private int LerInteiroComMensagem(string mensagem, int min, int max)
@@ -431,7 +448,7 @@ namespace Trabalho_ATP_Bingo
             {
                 Console.Write(mensagem);
                 texto = Console.ReadLine();
-            } while (string.IsNullOrWhiteSpace(texto));
+            } while (texto == "");
             return texto;
         }
 
@@ -441,13 +458,10 @@ namespace Trabalho_ATP_Bingo
             {
                 Console.Write("Sexo (M/F/Outro): ");
                 string entrada = Console.ReadLine();
-                if (!string.IsNullOrWhiteSpace(entrada))
-                {
-                    string s = entrada.Trim().ToUpper();
-                    if (s == "M") return "Masculino";
-                    if (s == "F") return "Feminino";
-                    if (s == "O" || s == "OUTRO") return "Outro";
-                }
+                string s = entrada.ToUpper();
+                if (s == "M") return "Masculino";
+                if (s == "F") return "Feminino";
+                if (s == "O" || s == "OUTRO") return "Outro";
                 Console.WriteLine("Valor invalido. Informe M, F ou Outro.");
             }
         }

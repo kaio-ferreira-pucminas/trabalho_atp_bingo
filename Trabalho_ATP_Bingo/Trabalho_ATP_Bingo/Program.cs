@@ -15,7 +15,7 @@ namespace Trabalho_ATP_Bingo
 
             jogo.CadastrarJogadores();
             jogo.DistribuirCartelas();
-            jogo.ExibirCartelasIniciais();
+            jogo.ExibirCartelas();
             jogo.IniciarPartida();
             jogo.ExibirRanking();
             jogo.ExibirLog();
