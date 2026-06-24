@@ -139,6 +139,8 @@ namespace Trabalho_ATP_Bingo
                 {
                     if (i == 2 && j == 2)
                         Console.Write("\t");
+                    else if (marcados[i, j])
+                        Console.Write("[" + numeros[i, j] + "]\t");
                     else
                         Console.Write(numeros[i, j] + "\t");
                 }
